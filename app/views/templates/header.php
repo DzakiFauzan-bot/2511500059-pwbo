@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <meta charset="UTF-8">
     <title>Halaman <?php echo $data['judul']; ?></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">PWBO</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>home">Home</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo BASEURL; ?>mahasiswa">Mahasiswa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo BASEURL; ?>about">About</a>
-        </li>
-      </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="<?php echo BASEURL; ?>">DPW Lanjutan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="<?php echo BASEURL; ?>">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/mahasiswa">Mahasiswa</a>
+                <a class="nav-item nav-link" href="<?php echo BASEURL; ?>/about">About</a>
+            </div>
+        </div>
     </div>
-    </div>
-  </div>
 </nav>

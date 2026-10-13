@@ -6,5 +6,8 @@ crossorigin="anonymous"></script>
 umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdj/
 yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src=""<?php echo BASEURL; ?>/js/bootstrap.js"></script>
+<script src=""<?php echo BASEURL; ?>/js/script.js"></script>
+    <!-- JS Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
