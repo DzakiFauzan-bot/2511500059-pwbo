@@ -1,6 +1,7 @@
 <?php
 
-class App {
+class App
+{
 
     protected $controllers = 'Home';
 

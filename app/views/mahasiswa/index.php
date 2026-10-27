@@ -1,4 +1,4 @@
-    <div class="container mt-4">
+<div class="container mt-4">
 
     <div class="row">
         <div class="col-lg-6">
@@ -6,68 +6,65 @@
         </div>
     </div>
 
-    
-    
 
 
-            
-<button type="button"
-        class="btn btn-primary tombolTambahData"
-        data-bs-toggle="modal"
+
+
+
+
+    <button type="button" class="btn btn-primary tombolTambahData" data-bs-toggle="modal"
         data-bs-target="#exampleModal">
-    Tambah Data Mahasiswa
-</button>
+        Tambah Data Mahasiswa
+    </button>
 
 
-        
-            
-            <h3>Daftar Mahasiswa</h3>
-            <ul class="list-group">
-                <?php foreach ($data['mhs'] as $mhs) : ?>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <?php echo $mhs['nama']; ?>
-                        
-                        
-                        <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>"
-                           class="badge bg-primary text-white text-decoration-none">
-                            detail
-                        </a>
 
-                        
-                        
-            
-            
 
-<a href="<?= BASEURL; ?>/mahasiswa/ubah/<?= $mhs['id']; ?>"
-   class="badge bg-success text-decoration-none tampilModalUbah"
-   data-bs-toggle="modal"
-   data-bs-target="#exampleModal">
-    Ubah
-</a>
+    <h3>Daftar Mahasiswa</h3>
+    <ul class="list-group">
+        <?php foreach ($data['mhs'] as $mhs): ?>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <?php echo $mhs['nama']; ?>
+
+
+                <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>"
+                    class="badge bg-primary text-white text-decoration-none">
+                    detail
+                </a>
 
 
 
 
 
 
-                    
-            <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>"
-            class="badge bg-danger float-end ms-1 text-decoration-none"
-            onclick="return confirm('Yakin ingin menghapus data ini?');">
-                Hapus
-            </a>
+                <a href="<?= BASEURL; ?>/mahasiswa/ubah/<?= $mhs['id']; ?>"
+                    class="badge bg-success text-decoration-none tampilModalUbah" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-id="<?= $mhs['id']; ?>">
+                    Ubah
+                </a>
 
 
 
 
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-    </div>
+
+
+
+                <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>"
+                    class="badge bg-danger float-end ms-1 text-decoration-none"
+                    onclick="return confirm('Yakin ingin menghapus data ini?');">
+                    Hapus
+                </a>
+
+
+
+
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+</div>
 </div>
 
-<!-- Modal -->
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">

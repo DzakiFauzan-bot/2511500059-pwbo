@@ -1,9 +1,10 @@
 <?php
 
-class About extends Controllers {
-    public function index($nama = 'Dono', $pekerjaan = 'Pelawak') 
+class About extends Controllers
+{
+    public function index($nama = 'Dono', $pekerjaan = 'Pelawak')
     {
-       
+
         $data['nama'] = $nama;
         $data['pekerjaan'] = $pekerjaan;
         $data['judul'] = 'About Me';
@@ -11,11 +12,11 @@ class About extends Controllers {
         $this->view('About/index', $data);
         $this->view('templates/footer');
     }
-    
-    public function page() 
+
+    public function page()
     {
-        
-         $data['judul'] = 'My Pages';
+
+        $data['judul'] = 'My Pages';
         $this->view('templates/header', $data);
         $this->view('About/page', $data);
         $this->view('templates/footer');
